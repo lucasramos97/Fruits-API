@@ -21,7 +21,7 @@ public class FruitService {
     // var pineapple = new Fruit("Pineapple", "Yellow", "Large");
     // var strawberry = new Fruit("Strawberry", "Red", "Small");
 
-    return Stream.of(apple, banana, grapes, orange, mango, watermelon, pineapple, strawberry)
+    return Stream.of(apple, banana)
         .sorted(Comparator.comparing(Fruit::getName))
         .toList();
   }
